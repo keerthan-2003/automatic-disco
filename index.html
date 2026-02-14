@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Catcher - Happy Valentine's Day!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="game-container">
+        <div id="ui-layer">
+            <div id="score-board" class="hidden">
+                Love Meter: <span id="score">0</span>%
+                <div id="health-display">❤️❤️❤️</div>
+            </div>
+
+            <div id="start-screen" class="screen">
+                <h1 class="title">Love Catcher<br><span style="font-size: 0.5em; display: block; margin-top: 10px;">For
+                        Apoorva</span></h1>
+                <p class="subtitle">Catch the falling hearts to fill the love meter!</p>
+                <button id="start-btn" class="heart-btn">Start Game</button>
+                <p class="instructions">Use Left/Right Arrows or Touch to Move</p>
+            </div>
+
+            <div id="game-over-screen" class="screen hidden">
+                <h2 class="title" id="end-title">Game Over</h2>
+                <p class="subtitle" id="end-message">Try again to win!</p>
+                <div id="final-score">Score: 0</div>
+                <button id="restart-btn" class="heart-btn">Play Again</button>
+            </div>
+
+            <div id="win-screen" class="screen hidden">
+                <h1 class="title">Happy Valentine's Day!</h1>
+                <p class="message-box">
+                    My Dearest Apoorva,<br><br>
+                    You caught all my love! <br>
+                    Every moment with you is special.<br>
+                    I love you! ❤️
+                </p>
+                <button id="replay-btn" class="heart-btn">Replay</button>
+            </div>
+        </div>
+        <canvas id="game-canvas"></canvas>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>
